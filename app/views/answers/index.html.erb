@@ -1,0 +1,11 @@
+<h1>Answers</h1>
+
+<ul>
+  <% @answers.each do |answer| %>
+    <li><%= link_to "Show", answer_path(answer) %></li>
+  <% end %>
+</ul>
+
+<hr>
+
+<%= link_to "New Answer", new_answer_path %>

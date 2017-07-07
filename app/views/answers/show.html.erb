@@ -1,0 +1,7 @@
+<h1>Show Answer</h1>
+
+<p><%= link_to "Edit", edit_answer_path(@answer) %></p>
+<p><%= link_to "Delete", answer_path(@answer),
+                         :data => {:confirm => "You sure?",
+                                   :method => "delete"} %></p>
+<p><%= link_to "Return to answers", answers_path %></p>
